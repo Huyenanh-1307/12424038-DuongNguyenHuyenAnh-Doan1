@@ -7,7 +7,7 @@ namespace Doan1
 {
     internal class ClsThaotacCSDL
     {
-        // Connection string - ĐÃ SỬA ĐÚNG TÊN DATABASE
+        // Connection string 
         private readonly string strConnect =
             "Server=localhost;Initial Catalog=QLsinhvienKTX;Integrated Security=True;TrustServerCertificate=True;";
         // ==================== 1. HÀM LẤY DỮ LIỆU (SELECT) ====================
