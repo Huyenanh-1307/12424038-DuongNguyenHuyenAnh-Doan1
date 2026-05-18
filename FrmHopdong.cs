@@ -35,7 +35,7 @@ namespace Doan1
 
             LoadHopDong();
 
-           
+
 
             LoadPhong();
         }
@@ -70,8 +70,8 @@ namespace Doan1
                 conn.Close();
             }
         }
-        
-       
+
+
         void LoadPhong()
         {
             try
@@ -187,34 +187,6 @@ namespace Doan1
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                string sql =
-                    "DELETE FROM HopDong " +
-                    "WHERE MaHD=@MaHD";
-
-                List<SqlParameter> param =
-                    new List<SqlParameter>()
-                    {
-                    new SqlParameter("@MaHD",
-                        txtMaHD.Text)
-                    };
-
-                cls.ThucThiNonQuery(sql, param);
-
-                MessageBox.Show("Xóa thành công");
-
-                LoadHopDong();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void btnLammoi_Click(object sender, EventArgs e)
         {
             txtMaHD.Clear();
@@ -320,6 +292,47 @@ namespace Doan1
                 MessageBox.Show(ex.Message);
 
                 conn.Close();
+            }
+        }
+
+        private void btnThanhly_Click(object sender, EventArgs e)
+        {
+            DialogResult tb;
+
+            tb = MessageBox.Show(
+                "Bạn có chắc muốn thanh lý hợp đồng không?",
+                "Thông báo",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (tb == DialogResult.Yes)
+            {
+                try
+                {
+                    string sql =
+                        "DELETE FROM HopDong " +
+                        "WHERE MaHD=@MaHD";
+
+                    List<SqlParameter> param =
+                        new List<SqlParameter>()
+                        {
+                    new SqlParameter("@MaHD",
+                        txtMaHD.Text)
+                        };
+
+                    cls.ThucThiNonQuery(sql, param);
+
+                    MessageBox.Show(
+                        "Thanh lý hợp đồng thành công");
+
+                    LoadHopDong();
+
+                    btnLammoi.PerformClick();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
     }

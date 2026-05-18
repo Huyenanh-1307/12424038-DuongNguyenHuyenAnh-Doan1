@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHopdong));
-            btnXoa = new Button();
+            btnThanhly = new Button();
             btnSua = new Button();
             btnThem = new Button();
             grbDanhsach = new GroupBox();
@@ -55,15 +55,15 @@
             ((System.ComponentModel.ISupportInitialize)p).BeginInit();
             SuspendLayout();
             // 
-            // btnXoa
+            // btnThanhly
             // 
-            btnXoa.Location = new Point(329, 463);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(114, 40);
-            btnXoa.TabIndex = 30;
-            btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
-            btnXoa.Click += btnXoa_Click;
+            btnThanhly.Location = new Point(329, 463);
+            btnThanhly.Name = "btnThanhly";
+            btnThanhly.Size = new Size(114, 40);
+            btnThanhly.TabIndex = 30;
+            btnThanhly.Text = "Thanh lý";
+            btnThanhly.UseVisualStyleBackColor = true;
+            btnThanhly.Click += btnThanhly_Click;
             // 
             // btnSua
             // 
@@ -260,7 +260,7 @@
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(855, 516);
-            Controls.Add(btnXoa);
+            Controls.Add(btnThanhly);
             Controls.Add(btnSua);
             Controls.Add(btnThem);
             Controls.Add(grbDanhsach);
@@ -288,7 +288,7 @@
         #endregion
 
         private NumericUpDown numSonguoitoida;
-        private Button btnXoa;
+        private Button btnThanhly;
         private Button btnSua;
         private Button btnThem;
         private GroupBox grbDanhsach;

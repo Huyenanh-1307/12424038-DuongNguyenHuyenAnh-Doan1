@@ -64,3 +64,4 @@ C:\Users\levan\source\Đồ Án 1\Doan1\Doan1\bin\Debug\net8.0-windows\Doan1.dll
 C:\Users\levan\source\Đồ Án 1\Doan1\Doan1\bin\Debug\net8.0-windows\Doan1.pdb
 C:\Users\levan\source\Đồ Án 1\Doan1\Doan1\obj\Debug\net8.0-windows\Doan1.genruntimeconfig.cache
 C:\Users\levan\source\Đồ Án 1\Doan1\Doan1\obj\Debug\net8.0-windows\ref\Doan1.dll
+C:\Users\levan\source\Đồ Án 1\Doan1\Doan1\obj\Debug\net8.0-windows\Doan1.sourcelink.json
